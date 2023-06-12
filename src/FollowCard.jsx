@@ -15,7 +15,7 @@ export function FollowCard({ children, userName, isFollowingInitial }) {
             <img className="avatar" alt="Avatar"
                 src={`https://unavatar.io/${userName}`} />
             <div className="followCard-content">
-                <div className="followCard-info">
+                <div className={`followCard-info ${classButton}`}>
                     <strong className={`followCard-user ${classButton}`}>
                         {children}
                     </strong>
