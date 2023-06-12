@@ -7,11 +7,11 @@ export function App() {
     <section className='component-followCard'>
       <b className='followCard-title'>A quién seguir</b>
       <FollowCard userName='S4vitar' isFollowingInitial>
-        S4vitar Mendoza Hernandez
+        S4vitar
       </FollowCard>
 
-      <FollowCard userName='BillGates' isFollowingInitial={false}>
-        Bill Gates
+      <FollowCard userName='MoureDev' isFollowingInitial={false}>
+        Brais Moure
       </FollowCard>
 
       <FollowCard userName='midudev' isFollowingInitial={false}>

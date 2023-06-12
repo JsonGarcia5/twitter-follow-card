@@ -3,8 +3,8 @@ import { useState } from "react";
 export function FollowCard({ children, userName, isFollowingInitial }) {
     const [isFollowing, setIsFollowing] = useState(isFollowingInitial);
 
-    const textButton = isFollowingInitial ? 'Siguiendo' : 'Seguir';
-    const classButton = isFollowingInitial ? 'isFollowing' : '';
+    const textButton = isFollowing ? 'Siguiendo' : 'Seguir';
+    const classButton = isFollowing ? 'isFollowing' : '';
 
     const handleClick = () => {
         setIsFollowing(!isFollowing);
