@@ -5,7 +5,7 @@ import { FollowCard } from './FollowCard';
 export function App() {
   return (
     <section className='component-followCard'>
-      <b className='followCard-title'>A quién seguir</b>
+      <b className='followCard-title'>Tal vez te guste</b>
       <FollowCard userName='S4vitar' isFollowingInitial>
         S4vitar
       </FollowCard>
@@ -18,7 +18,7 @@ export function App() {
         Miguel Ángel Durán
       </FollowCard>
 
-      <button className='followCard-button-more'>Show more</button>
+      <button className='followCard-button-more'>Mostrar más</button>
     </section>
   );
 }
