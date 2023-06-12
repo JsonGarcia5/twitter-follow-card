@@ -6,15 +6,15 @@ export function App() {
   return (
     <section className='component-followCard'>
       <b className='followCard-title'>A quién seguir</b>
-      <FollowCard userName='S4vitar' isFollowing>
+      <FollowCard userName='S4vitar' isFollowingInitial>
         S4vitar Mendoza Hernandez
       </FollowCard>
 
-      <FollowCard userName='BillGates' isFollowing={false}>
+      <FollowCard userName='BillGates' isFollowingInitial={false}>
         Bill Gates
       </FollowCard>
 
-      <FollowCard userName='midudev' isFollowing={false}>
+      <FollowCard userName='midudev' isFollowingInitial={false}>
         Miguel Ángel Durán
       </FollowCard>
 

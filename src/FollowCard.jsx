@@ -1,7 +1,14 @@
-export function FollowCard({ children, userName, isFollowing }) {
+import { useState } from "react";
 
-    const textButton = isFollowing ? 'Siguiendo' : 'Seguir';
-    const classButton = isFollowing ? 'isFollowing' : '';
+export function FollowCard({ children, userName, isFollowingInitial }) {
+    const [isFollowing, setIsFollowing] = useState(isFollowingInitial);
+
+    const textButton = isFollowingInitial ? 'Siguiendo' : 'Seguir';
+    const classButton = isFollowingInitial ? 'isFollowing' : '';
+
+    const handleClick = () => {
+        setIsFollowing(!isFollowing);
+    }
 
     return (
         <article className="followCard">
@@ -16,7 +23,7 @@ export function FollowCard({ children, userName, isFollowing }) {
                         @{userName}
                     </span>
                 </div>
-                <button className={`followCard-button ${classButton}`}>
+                <button className={`followCard-button ${classButton}`} onClick={handleClick}>
                     <span className="button-text">{textButton}</span>
                     <span className="button-text-stopFollow">Dejar de seguir</span>
                 </button>
